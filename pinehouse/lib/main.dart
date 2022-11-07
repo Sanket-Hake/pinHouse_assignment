@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:pinehouse/Screens/home.dart';
-
+import 'package:pinehouse/Screens/First_Screen.dart';
 import 'Screens/Second_Screen.dart';
 
 Future<void> main() async {
@@ -17,11 +16,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          // textTheme: GoogleFonts.playfairDisplayTextTheme(
-          //   Theme.of(context).textTheme,
-          // ),
-          ),
       initialRoute: '/',
       routes: {
         '/': (context) => firstScreen(),

@@ -36,7 +36,7 @@ class _Second_ScreenState extends State<Second_Screen> {
                     }
 
                     if (snapshot.connectionState == ConnectionState.waiting) {
-                      return Text("Loading");
+                      return CircularProgressIndicator();
                     }
                     final Value = (snapshot.data! as QuerySnapshot).docs;
                     return ListView.builder(
